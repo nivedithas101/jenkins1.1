@@ -1,7 +1,7 @@
 pipeline {
     agent {label "slave1"}
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('MyDockerCredentials')
+    DOCKERHUB_CREDENTIALS = credentials('Docker')
     }
     stages { 
         stage('SCM Checkout') {
